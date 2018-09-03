@@ -7,7 +7,7 @@ class App extends Component {
       <div className="App">
         <ul>
           <ToDo />
-          <Todo />
+          <ToDo />
         </ul>
       </div>
     );
