@@ -14,6 +14,10 @@ class App extends Component {
  };
 }
 
+ handleDelete(e){
+   console.log('delete');
+ }
+
  handleChange(e) {
    this.setState({ newTodoDescription: e.target.value})
  }
@@ -43,6 +47,8 @@ class App extends Component {
         <form onSubmit={ (e) => this.handleSubmit(e) }>
           <input type="text" value={ this.state.newTodoDescription } onChange={ (e) => this.handleChange(e) } />
           <input type="submit" />
+          <button onClick={ (e) => this.handleDelete(e) }>
+          </button>
         </form>
       </div>
     );
