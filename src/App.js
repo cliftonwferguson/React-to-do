@@ -43,12 +43,13 @@ class App extends Component {
         { this.state.todos.map( (todo, index) =>
           <ToDo key={ index } description={ todo.description } isCompleted= { todo.isCompleted } toggleComplete={ () => this.toggleComplete(index) }/>
         )}
+        <button onClick={ (e) => this.handleDelete(e) }>
+        </button>
         </ul>
         <form onSubmit={ (e) => this.handleSubmit(e) }>
           <input type="text" value={ this.state.newTodoDescription } onChange={ (e) => this.handleChange(e) } />
           <input type="submit" />
-          <button onClick={ (e) => this.handleDelete(e) }>
-          </button>
+
         </form>
       </div>
     );
