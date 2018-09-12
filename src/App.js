@@ -14,9 +14,10 @@ class App extends Component {
  };
 }
 
- handleDelete(index){
-   const todos = this.state.todos.slice();
-   
+ deleteTodo(index){
+   const todos = this.state.todos.filter(false);
+   this.setState({ todos: todos });
+
  }
 
  handleChange(e) {
@@ -54,7 +55,5 @@ class App extends Component {
     );
   }
 }
-
-
 
 export default App;
