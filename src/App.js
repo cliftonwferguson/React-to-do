@@ -15,7 +15,8 @@ class App extends Component {
 }
 
  handleDelete(index){
-   console.log('index');
+   const todos = this.state.todos.slice();
+   
  }
 
  handleChange(e) {
