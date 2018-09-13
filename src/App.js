@@ -15,10 +15,10 @@ class App extends Component {
 }
 
  deleteTodo(index){
-   const todos = this.state.todos.filter(false);
+   const todo = todos[index];
+   const todos = this.state.todos.filter(todos.false !== false );
    this.setState({ todos: todos });
-
- }
+   }
 
  handleChange(e) {
    this.setState({ newTodoDescription: e.target.value})
