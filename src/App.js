@@ -18,7 +18,7 @@ class App extends Component {
   const todos = this.state.todos.slice();
    const todoToDelete = todos[index];
    const filteredTodos = todos.filter(todo => todo !== todoToDelete );
-
+   this.setState({ todos: filteredTodos });
 
    }
 
